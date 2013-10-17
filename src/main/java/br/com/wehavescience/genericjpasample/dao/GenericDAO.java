@@ -24,27 +24,15 @@ public class GenericDAO<PK, T> {
 	}
 
 	public void save(T entity) {
-		try {
-			entityManager.persist(entity);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		entityManager.persist(entity);
 	}
 
 	public void update(T entity) {
-		try {
-			entityManager.merge(entity);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		entityManager.merge(entity);
 	}
 
 	public void delete(T entity) {
-		try {
-			entityManager.remove(entity);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		entityManager.remove(entity);
 	}
 
 	public List<T> findAll() {
