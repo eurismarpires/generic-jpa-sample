@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
  *
  * Oct 17, 2013
  * 
- * This class encapsulates some work of EntityManager and EntityManagerFactory, doing only the essencial
+ * This class encapsulates some work of EntityManager and EntityManagerFactory, doing only the essential
  * 
  */
 public class SimpleEntityManager {
